@@ -1,0 +1,85 @@
+---
+import { siteConfig } from "../config";
+---
+
+<section id="resume" class="p-8 sm:p-12 md:p-16 lg:p-24">
+  <div>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+      <div class="lg:col-span-4">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
+          Resume
+        </h2>
+        <div
+          class="w-[75px] h-[5px] mt-2 rounded-full"
+          style={`background-color: ${siteConfig.accentColor}`}
+        />
+      </div>
+
+      <div class="lg:col-span-8">
+        <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
+          <div class="text-center">
+            <div class="mb-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="mx-auto mb-4"
+                style={`color: ${siteConfig.accentColor}`}
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                <path d="M9 9l1 1l3 -3" />
+                <path d="M9 13l1 1l3 -3" />
+                <path d="M9 17l1 1l3 -3" />
+              </svg>
+            </div>
+            
+            <h3 class="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+              Download My Resume
+            </h3>
+            
+            <p class="text-base sm:text-lg text-gray-600 mb-6 leading-relaxed">
+              Get a comprehensive overview of my experience, skills, and achievements in a professional PDF format.
+            </p>
+            
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-3 px-6 py-3 sm:px-8 sm:py-4 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors duration-300 font-medium text-base sm:text-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+                <path d="M7 11l5 5l5 -5" />
+                <path d="M12 4l0 12" />
+              </svg>
+              Download Resume (PDF)
+            </a>
+            
+            <div class="mt-4 text-sm text-gray-500">
+              <p>Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
