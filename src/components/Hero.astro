@@ -146,7 +146,7 @@ import { siteConfig } from "../config";
       <p
         class="mt-4 sm:mt-6 md:mt-8 text-pretty text-base sm:text-lg md:text-xl/8 font-medium text-gray-600 animate-fade-in animation-delay-400"
       >
-        {siteConfig.title}
+        <span id="rotating-title" class="transition-opacity duration-500">{siteConfig.title}</span>
       </p>
     </div>
   </div>
@@ -329,4 +329,38 @@ import { siteConfig } from "../config";
   .animation-delay-600 {
     animation-delay: 0.6s;
   }
+
+  #rotating-title {
+    display: inline-block;
+    transition: opacity 0.5s ease-in-out;
+  }
 </style>
+
+<script>
+  const titles = ["Software Engineer", "AI/ML Engineer"];
+  const titleElement = document.getElementById("rotating-title");
+  let currentIndex = 0;
+
+  function rotateTitle() {
+    // Fade out
+    titleElement.style.opacity = "0";
+    
+    setTimeout(() => {
+      // Change text
+      currentIndex = (currentIndex + 1) % titles.length;
+      titleElement.textContent = titles[currentIndex];
+      
+      // Fade in
+      titleElement.style.opacity = "1";
+    }, 500); // Wait for fade out to complete
+  }
+
+  // Start rotation after initial load
+  if (titleElement) {
+    // Set initial title
+    titleElement.textContent = titles[0];
+    
+    // Start rotating every 3 seconds
+    setInterval(rotateTitle, 2000);
+  }
+</script>
