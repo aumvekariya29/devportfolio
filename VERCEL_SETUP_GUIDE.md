@@ -59,7 +59,7 @@ No environment variables needed for this project.
 - ✅ `astro.config.mjs` - Astro configuration
 - ✅ `src/pages/index.astro` - Main page
 - ✅ `src/config.ts` - Your personalized content
-- ✅ `public/resume.pdf` - Your resume file
+- ✅ `public/aum_vekariya_resume.pdf` - Your resume file
 
 ---
 

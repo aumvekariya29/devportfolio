@@ -46,7 +46,7 @@ export const siteConfig = {
     {
       company: "Zluck Solutions",
       title: "Software Developer",
-      dateRange: "May 2024 - Sep 2025",
+      dateRange: "Mar 2025 - Sep 2025",
       location: "Surat, Gujarat, India",
       bullets: [
         "Owned end-to-end delivery of 6+ production features across backend and frontend (Python/Node.js, React, REST APIs), translating requirements into design, implementation, QA handoff, and release with measurable product impact",
