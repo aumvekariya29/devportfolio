@@ -41,11 +41,18 @@ export const siteConfig = {
       link: "",
       skills: ["Python", "LangChain", "Mistral-7B", "FAISS"],
     },
+    {
+      name: "Space Vault",
+      description:
+        "Multi-tenant Slack-style workspace with database-enforced tenant isolation (Postgres RLS), role-based access, Stripe subscription billing with idempotent webhooks, and a per-tenant RAG assistant on pgvector. Built with FastAPI, React and TypeScript, with 24 automated tests.",
+      link: "",
+      skills: ["FastAPI", "React", "TypeScript", "PostgreSQL", "pgvector", "Stripe"],
+    },
   ],
   experience: [
     {
       company: "Zluck Solutions",
-      title: "Software Developer",
+      title: "Software Developer (AI/ML)",
       dateRange: "Mar 2025 - Sep 2025",
       location: "Surat, Gujarat, India",
       bullets: [
